@@ -1,0 +1,62 @@
+/* 
+    Document   : table-style
+    Created on : Dec 2, 2012, 10:03:35 AM
+    Author     : jyo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    
+    
+    margin-left: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+h1{
+    
+    font-size: 20px;
+    font-family: 'Times New Roman',Times,serif;
+    color: #666666;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.cust-table{   
+	border-collapse:collapse;
+    
+}
+ 
+.cust-table-header{
+	text-align:center;
+	background:none repeat scroll 0 0 #E5E5E5;
+	border-bottom:1px solid #BBBBBB;
+	padding:16px;
+}
+ 
+.cust-table-odd-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #FFFFFFF;
+	border-top:1px solid #BBBBBB;
+}
+ 
+.cust-table-even-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #F9F9F9;
+	border-top:1px solid #BBBBBB;
+}
+.saveBtn{
+    
+    
+    background-color: #666666;
+    border-right-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+    font-family: 'Times New Roman',Times,serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+

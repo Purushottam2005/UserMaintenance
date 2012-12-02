@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>User Maintenance Application</title>
+         <link rel="stylesheet" type="text/css" href="table-style.css" />
+        
+    </h:head>
+    <h:body>
+       
+        <h:form>
+            <center>
+                <h2> Customers List </h2>
+            <h:dataTable value="#{index.allCustomers}" var="cust"
+                         styleClass="cust-table"
+    			headerClass="cust-table-header"
+    			rowClasses="cust-table-odd-row,cust-table-even-row">
+                
+                <h:column>
+    				<f:facet name="header">Customer Name</f:facet>
+    				#{cust.name}
+    			</h:column>
+ 
+    			<h:column>
+    				<f:facet name="header">Age</f:facet>
+    				#{cust.age}
+    			</h:column>
+                
+            </h:dataTable>
+            </center>
+        </h:form>
+        
+    </h:body>
+</html>
+

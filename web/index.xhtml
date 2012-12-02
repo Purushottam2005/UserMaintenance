@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>User Maintenance Application</title>
+        `   
+         <link rel="stylesheet" type="text/css" href="table-style.css" />
+    </h:head>
+    <h:body>
+        <h1>User Maintenance Application</h1>
+        <h:form>
+            
+            <h:panelGrid columns="3">
+                <h:outputLabel for="name" value="Name :"/> 
+                <h:inputText id="name" value="#{index.name}" required="true" label="Name" ></h:inputText>
+                    <h:message for="name" style="color:red" />
+ 
+                <h:outputLabel for="age" value="Age :"/>
+                <h:inputText id="age" value="#{index.age}" required="true" label="Age" ></h:inputText>
+                    <h:message for="age" style="color:red" />
+            </h:panelGrid> <br/>        
+            <h:commandButton styleClass="saveBtn" value="Save" action="#{index.save}"></h:commandButton>
+            
+           
+        </h:form>
+    </h:body>
+</html>
+
